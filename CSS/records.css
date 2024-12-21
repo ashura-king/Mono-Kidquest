@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: goldenrod;
+  margin: 0;
+  padding: 20px;
+}
+.head {
+  position: fixed; 
+  top: 20px; 
+  left: 20px; 
+  z-index: 1000; 
+}
+
+.head a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  
+  color: rgb(238, 238, 238); 
+  border-radius: 60%; 
+  text-decoration: none; 
+  transition: all .50s ease;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  
+ 
+}
+
+.head a:hover {
+  color: #c90808; 
+}
+
+.head a .fa-solid {
+  font-size: 30px;
+}
+.task-manager {
+  margin-top: 100px;
+  margin-left: 280px;
+  max-width: 900px;
+  background-color: #ECC165;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+.task-completed {
+  text-decoration: line-through;
+}
+
+.task-completed td:first-child::before {
+  content: 'X ';
+  color: red;
+  font-weight: bold;
+}
+
+#new-task {
+  border: none;
+  background: transparent;
+}
+
+#button {
+  color: aliceblue;
+  background-color: rgb(189, 5, 5);
+  margin-top: 5px;
+  border-radius: 5px;
+  border: #1b1b1b;
+}
+
+#button:hover {
+  background-color: rgb(214, 205, 205);
+  color: rgb(214, 205, 205);
+}

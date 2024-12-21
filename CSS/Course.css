@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.head {
+    position: fixed; 
+    top: 20px; 
+    left: 20px; 
+    z-index: 1000; 
+  }
+  
+  .head a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    
+    color: rgb(238, 238, 238); 
+    border-radius: 60%; 
+    text-decoration: none; 
+    transition: all .50s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  
+   
+  }
+  
+  .head a:hover {
+    color: #c90808; 
+  }
+  
+  .head a .fa-solid {
+    font-size: 30px;
+  }
+body{
+    background-color: rgb(236, 144, 25);
+
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lilita One';
+    color: #ffffff;
+    text-shadow: 
+    -1px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black;
+}
+
+
+
+.NumberSection{
+    top:20px;
+    margin-left:60px;
+}
+
+@keyframes count {
+
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+  
+}
+
+.number {
+    position: relative;
+    display: inline-block;
+    font-size:70px;
+    padding: 68px;
+    margin: 40px;
+ ;
+    background-color: #f17050;
+    border-radius: 5px;
+    text-align: center;
+    animation: count 1s ease-in ;
+    transition: transform .2s ease-in-out;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2), 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+}
+
+.number:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.number img {
+    position: absolute;
+    top: 50px;
+    right: -90px;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.number-button {
+    position: absolute;
+    top: 0;
+    left: -0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f17050;
+    color: black;
+    font-size:20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.number-button:hover {
+    background-color:  #ffa584;
+}
+
+
+.number-button i {
+    font-size: 25px;
+}
+
+.center-button {
+    position: absolute;
+    left: 50%;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width:200px;
+    margin-top: 10px;
+    padding: 0;
+  
+    transition: all 0.3s ease-in-out;
+
+    text-align: center;
+    
+    transform: translateX(-50%);
+
+
+}
+
+.center-button:hover button {
+    background-color: #f14f26;
+}
+
+.center-button button {
+    padding: 10px 20px;
+    background-color: #f17050;
+    color: rgb(15, 14, 14);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Lilita One';
+    color: #ffffff;
+  text-shadow: 
+  -1px -1px 0 black, 
+   1px -1px 0 black, 
+  -1px  1px 0 black, 
+   1px  1px 0 black;
+    
+    
+}
+.additionalNumbers{
+    margin-top:300px; 
+
+}
+.number-style{
+    font-family: 'Lilita One';
+    color: #ffffff;
+    text-shadow: 
+    -1px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black;
+}
+
+
+
+
+

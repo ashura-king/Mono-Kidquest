@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 40px;
+  background-image: url('/public/images/y.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative; 
+
+}
+.head {
+  position: fixed; 
+  top: 20px; 
+  left: 20px; 
+  z-index: 1000; 
+}
+
+
+.head, .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: rgb(238, 238, 238); 
+  border-radius: 60%; 
+  text-decoration: none; 
+  transition: all 0.50s ease;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  
+}
+
+.head:hover, .back:hover {
+  color: #c90808; 
+}
+
+.head .back .fa-solid {
+  font-size: 30px;
+}
+
+
+.box {
+  width: 170px;
+  height: 170px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  font-family: 'Lilita One';
+}
+.box:hover {
+  transform: scale(1.5) rotate(5deg);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+  background-color: #45a049;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+@keyframes wobble {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.box.animate {
+  animation: 
+      bounce 0.5s,
+      wobble 0.5s 0.5s,
+      pulse 0.5s 1s;
+}
+
+.bottom1-image {
+  position: absolute;
+  bottom: -10%;
+  left: 10%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 280px;
+  width: 230px;
+}
+
+.bottom2-image {
+  position: absolute;
+  bottom: -10%;
+  left: 72%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 250px;
+  width: 300px;
+}
+
+.bottom3-image {
+  position: absolute;
+  bottom: -10%;
+  left: 23%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 250px;
+  width: 250px;
+}
+
+.bottom4-image {
+  position: absolute;
+  bottom: -10%;
+  left: 90%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 250px;
+  width: 250px;
+}
+
+.bottom5-image {
+  position: absolute;
+  bottom: -14%;
+  left: 60%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 300px;
+  width: 205px;
+}
+
+.bottom6-image {
+  position: absolute;
+  bottom: -14%;
+  left: 47%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 300px;
+  width: 205px;
+}
+
+.bottom7-image {
+  position: absolute;
+  bottom: -11%;
+  left: 35%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 300px;
+  width: 320px;
+}
+
+.top1-image {
+  position: absolute;
+  top: -8%;
+  left: 8%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.top2-image {
+  position: absolute;
+  top: -8%;
+  right: -8%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: 250px;
+  width: 250px;
+}
+p{
+  position: absolute; 
+  top: -8%; 
+  width: 100%; 
+  text-align: center; 
+  font-size: 75px; 
+  font-weight:bold; 
+  font-family: 'Lilita One';
+  color: #ffffff;
+  text-shadow: 
+  -1px -1px 0 rgb(33, 219, 39), 
+   1px -1px 0 black, 
+  -1px  1px 0 black, 
+   1px  1px 0 black; 
+}
